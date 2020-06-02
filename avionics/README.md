@@ -5,8 +5,8 @@ The avionics subteam
 ##### [Firefly χ](https://www.github.com/curocketengineering/firefly_chi)
 The proprietary brain of the avionics bay. 
 
-##### χ-Ants (working name)
-Modular, single-purpose arduino-based systems that communicate over CANS. 
+##### AntsCANs (working name)
+Modular, single-purpose arduino-based systems that communicate over CANs. 
 These are designed to help other subteams perform simple computational goals
 and to help us get auxilary readings across the rocket.
 
