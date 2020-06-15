@@ -51,4 +51,4 @@ COTS was an stratologger.
 
 New system (firefly chi) is python-based running on a raspberry pi. 
 COTS is an RRC3. 
-COTS beacon is ???.
+COTS beacon is the T3 GPS Tracking System.
