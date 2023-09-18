@@ -7,6 +7,7 @@
 6. [I2C](#i2c)
 7. [Writing to the SD card](#writing-to-the-sd-card)
 8. [UART](#uart)
+9. [Videos](#videos)
 
 ## Installation
 Install stm32CubeIDE from [here](https://www.st.com/en/development-tools/stm32cubeide.html) and follow the instructions.
@@ -47,3 +48,11 @@ Not explored fully yet
 
 ## UART
 Not explored fully yet
+
+## Videos
+Here are some helpful videos to help you get started:
+- [Programming in C Quick](https://www.youtube.com/watch?v=3lQEunpmtRA)
+- [Programming in C Long](https://www.youtube.com/watch?v=KJgsSFOSQv0)
+- [STM32CubeIDE Tutorial](https://www.youtube.com/watch?v=dnfuNT1dPiM)
+
+I think it goes without saying, that you do not have to watch the entirety of these videos, the only one I reccomend watching entirely through is the Programming In C Quick. Ideally you should skim through the longer ones and watch the parts your confused about; but the best way to tackle this is honestly to just start coding and google things as you go and try and make a quick little hello world or command line calculator in C to get a handle on things. Remember practice is the best way to learn so don't spend too long listening to the videos.
