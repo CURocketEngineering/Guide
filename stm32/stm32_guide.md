@@ -7,7 +7,11 @@
 6. [I2C](#i2c)
 7. [Writing to the SD card](#writing-to-the-sd-card)
 8. [UART](#uart)
-9. [Videos](#videos)
+9.[Videos](#videos)
+
+Additional guides:
+- [Interrupts](interrupting.md)
+- [USB](USB.md)
 
 ## Installation
 Install stm32CubeIDE from [here](https://www.st.com/en/development-tools/stm32cubeide.html) and follow the instructions.
@@ -48,6 +52,8 @@ Not explored fully yet
 
 ## UART
 Not explored fully yet
+
+
 
 ## Videos
 Here are some helpful videos to help you get started:
