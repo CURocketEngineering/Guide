@@ -15,16 +15,28 @@ For the description consider answering these questions:
 - Why is it necessary? (Bug fix, feature, improvements?)
 - How does the change address the issue? 
 - What side effects does this change have?
-- Include a link to the ticket, if any.
-### Pushing to Master
-Don't.   
-- If only one person is working on the project, then create a `dev` branch where you can push updates from your local computer. Pull the `dev` branch into master when the code is in a good place. 
-```
-    // Will create the dev branch and push your latest commit to it
-    git push origin dev    
+
+### Pushing to Main
+
+Do **not** push directly to the `main` branch.
+
+#### If You Are the Only Contributor:
+1. Create a `dev` branch to manage your changes.
+2. Push updates to the `dev` branch from your local computer.
+3. Merge the `dev` branch into `main` when the code is stable and ready.
+
+```bash
+# Create the dev branch and push your latest commit to it
+git checkout -b dev
+git push origin dev
 ```
 
-- If multiple people are working on the code then see [Pushing to Branches](#Pushing-to-Branches)
+#### If There Are Multiple Contributors:
+1. Do **not** use `main` for development.
+2. Follow the guidelines in [Pushing to Branches](#Pushing-to-Branches) to collaborate effectively. 
+
+This workflow ensures the `main` branch remains stable and avoids conflicts during development.
+
 ### Pushing to Branches
 If you are working on a feature or bugfix, find the branch that seems most relevant to your current task and push to that branch with the proper commit messages. If you are working on a new major feature, or there is no related branch to the issue you're working on, see [Branches](#Branches) for how to create a new branch.
 
@@ -35,15 +47,24 @@ Pull requests should be made when you are ready to merge your changes into the m
 When pulling into the master branch your pull request will have to be reviewed by another member of the team. This is to ensure that the code is up to the standards of the team and that there are no obvious bugs or issues with the code.
 
 ## Branches
-New branches should be created when a new major feature in the software is being worked on or there is no related branch to the issue you're working on. Branches can be named flexibly, but should generally fall under one of these categories:
-- Feature Branches
-    - These branches are for new features that are being added to the software. A [pull request](#pull-requests) should be made to merge into master when the feature is complete.
-- Test Branches
-    - Often times during software tests, small changes have to made to get it working properly. Use a test branch to organize all these small changes made during the test. 
-- Bugfix Branches
-    - Whenever there is a bug found in main code, a new branch should be created to fix the bug. These branches should be merged into their respective feature branch or master when the bug is fixed.
-- Misc. Branches
-    - These branches are for any other major changes or overhauls that don't fall under the other two categories. These branches should be merged into their respective feature branch or master when the changes are complete.
+New branches should be created when a new major feature in the software is being worked on or there is no related branch to the issue you're working on. Branches can be named flexibly, but should generally fall under one of these categories.
+
+**Categories**:
+- **Feature Branches** (`feature/`)
+   - For new features or functionalities.
+   - Example: `feature/add-gyroscope-support`
+- **Test Branches** (`test/`)
+   - For adding unit, integration, or other tests, especially those with temporary changes.
+   - Example: `test/gyro-integrity-checks`
+- **Bugfix Branches** (`fix/`)
+   - For fixing bugs in production or feature branches.
+   - Example: `fix/gyro-range-error`
+- **Refactor Branches** (`refactor/`)
+   - For improving code structure without changing functionality.
+   - Example: `refactor/reorganize-sensors`
+- **Chore Branches** (`chore/`)
+   - For non-code changes like documentation, configuration, or build scripts.
+   - Example: `chore/update-readme`
 
 ## The GIT way to change code
 1. Create a new local [branch](#Branches) based on the change you plan on making.  
