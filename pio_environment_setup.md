@@ -2,6 +2,31 @@
 
 This guide outlines the steps for setting up PlatformIO (PIO) environment for flashing any of the CURE flight computers, including MARTHA, Active-Aero, and SAVA.
 
+## Table of Contents
+
+* [PlatformIO (PIO) Environment Setup](#platformio-pio-environment-setup)
+
+  * [Prerequisites](#prerequisites)
+
+    * [1. VSCode Installation](#1-vscode-installation)
+    * [2. Git Installation](#2-git-installation)
+    * [3. Build Tools Installation (Windows Only)](#3-build-tools-installation-windows-only)
+    * [4. PlatformIO Installation](#4-platformio-installation)
+  * [Building and Flashing Firmware](#building-and-flashing-firmware)
+
+    * [1. Clone the Repository](#1-clone-the-repository)
+    * [2. Open the Project in VSCode](#2-open-the-project-in-vscode)
+    * [3. Initializing the Submodules](#3-initializing-the-submodules)
+    * [4. Selecting the Environment](#4-selecting-the-environment)
+    * [5. Building the Project](#5-building-the-project)
+    * [6. Flashing the Firmware](#6-flashing-the-firmware)
+    * [7. Serial Monitor](#7-serial-monitor)
+  * [Build Troubleshooting](#build-troubleshooting)
+
+    * [1. Fatal Error when Fetching Submodules](#1-fatal-error-when-fetching-submodules)
+    * [2. Please specify `upload_port`...](#2-please-specify-upload_port)
+
+
 ## Prerequisites
 
 ### 1. "VSCode" Installation
