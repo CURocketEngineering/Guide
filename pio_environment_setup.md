@@ -72,7 +72,10 @@ cd ~/rocketry
 ```
 - Now, clone the repository you want to work with.
 ```bash
-# MARTHA
+# Native
+git clone https://github.com/CURocketEngineering/Native.git
+
+# MARTHA 1.3
 git clone https://github.com/CURocketEngineering/MARTHA-1.3.git
 
 # Active-Aero
@@ -88,7 +91,7 @@ git clone https://github.com/CURocketEngineering/SAVA.git
 ### 2. Open the Project in VSCode
 - Open VSCode and select "File" > "Open Folder..."
 - Navigate to the folder where you cloned the repository and select it.
-- E.g. for MARTHA you would select `~/rocketry/MARTHA-1.3`.
+- E.g. for Native you would select `~/rocketry/Native`.
 - This will open the project in VSCode, and you should see the project files in the Explorer view on the left side of the window.
 
 ### 3. Initializing the Submodules
@@ -171,3 +174,11 @@ This error means that PlatformIO doesn't know which port to use to upload the fi
 - Make sure your USB cable supports data transfer and is not just a power cable. (Many of the cables in Cook are just power cables.)
 - Make sure the flight computer is powered on and connected to your computer.
 - If it's a FeatherS3, make sure it's in the programmable boot mode. (Hold the boot button and then tap the reset button.)
+
+## Next Steps
+
+### Native
+To further verify that PlatformIO is configured properly, we can run local
+unit tests using Native. 
+Follow the instructions in the [Native README](https://github.com/CURocketEngineering/Native/blob/main/README.md). 
+There is some overlap with this guide, so skip the parts that you've already completed. 
